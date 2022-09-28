@@ -8,6 +8,8 @@ import Stack from 'react-bootstrap/Stack';
 const App = () => {
   const { active, account, library, connector, activate, deactivate } =
     useWeb3React();
+
+    
   const connect = async () => {
     try {
       await activate(injected);
