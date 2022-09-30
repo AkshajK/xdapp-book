@@ -10,10 +10,7 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { formatEther } from "@ethersproject/units";
 import Web3 from "web3";
 import contractJson from "./chains/evm/out/xGroupChat.sol/xGroupChat.json";
-const chainIdToAddress = {
-  "1": "0xeea2Fc1D255Fd28aA15c6c2324Ad40B03267f9c5",
-  "1397": "0xeea2Fc1D255Fd28aA15c6c2324Ad40B03267f9c5",
-};
+import chainIdToAddress from "./deployinfo/chainIdToAddress.json"
 const App = () => {
   const { active, account, library, connector, activate, deactivate } =
     useWeb3React();
